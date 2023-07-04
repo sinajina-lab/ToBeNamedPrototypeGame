@@ -5,7 +5,7 @@ using UnityEngine;
 public class Spawner : MonoBehaviour
 {
     [SerializeField] GameObject[] enemies;
-    [SerializeField] Vector3 spawnValues;
+    [SerializeField] Vector3 spawnValues; //how long the boundery is
 
     [SerializeField] float spawnWait;
     [SerializeField] float spawnMostWait;
@@ -38,7 +38,7 @@ public class Spawner : MonoBehaviour
 
             Vector3 spawnPosition = new Vector3(Random.Range(-spawnValues.x, spawnValues.x), 1, Random.Range(-spawnValues.z, spawnValues.z));
 
-            Instantiate(enemies[randEnemy], spawnPosition + transform.TransformPoint(0, 1, 5), gameObject.transform.rotation);
+            Instantiate(enemies[randEnemy], spawnPosition + transform.TransformPoint(0, 0, 0), gameObject.transform.rotation);
 
             yield return new WaitForSeconds(spawnWait);
         }
