@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - collectable
+  - Slow Motion Box
+  - Coins
+  - Deduct
   layers:
   - Default
   - TransparentFX
@@ -12,8 +15,8 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
+  - Slow Motion
+  - Target
   - 
   - 
   - 
