@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 7255587237875927955}
   - component: {fileID: 8276837995205298363}
   - component: {fileID: 3871920952807367349}
+  - component: {fileID: 4043918473172797090}
   m_Layer: 7
   m_Name: Slow Motion Box
   m_TagString: Slow Motion Box
@@ -126,6 +127,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 130bbb498894f2a41b435a51587fb9c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &4043918473172797090
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 832486477341691734}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2f5a4448511b2e4ca8b2d15bdd31e72, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &7082178000456332007

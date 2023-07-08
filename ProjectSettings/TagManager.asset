@@ -8,6 +8,8 @@ TagManager:
   - Slow Motion Box
   - Coins
   - Deduct
+  - Die
+  - Destroy
   layers:
   - Default
   - TransparentFX

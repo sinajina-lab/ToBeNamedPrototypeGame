@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 9130467737229920282}
   - component: {fileID: 5880419891332692617}
   - component: {fileID: 515024330078331333}
+  - component: {fileID: 4273448797498656001}
   m_Layer: 0
   m_Name: Collect Box
   m_TagString: Coins
@@ -141,3 +142,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   FloatingTextPrefab: {fileID: 3344673267802805256, guid: 36bcebed598429f43867260b3e14b7f3, type: 3}
+--- !u!114 &4273448797498656001
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 910081231409105973}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2f5a4448511b2e4ca8b2d15bdd31e72, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

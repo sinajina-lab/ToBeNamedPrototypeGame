@@ -21,6 +21,8 @@ public class RandomSpawnGrid : MonoBehaviour
     private void Update()
     {
         spawnWait = Random.Range(spawnLeastWait, spawnMostWait);
+
+        
     }
     IEnumerator SpawnCube()
     {

@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 1171915187735613346}
   - component: {fileID: 4995647219582435735}
   - component: {fileID: 2640315639057339143}
+  - component: {fileID: 14527341911003257}
   m_Layer: 0
   m_Name: Bomb Box
   m_TagString: Untagged
@@ -159,5 +160,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 130bbb498894f2a41b435a51587fb9c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &14527341911003257
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7029252649315140268}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2f5a4448511b2e4ca8b2d15bdd31e72, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

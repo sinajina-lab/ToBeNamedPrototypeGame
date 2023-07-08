@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 4486114937332125236}
   - component: {fileID: 5746796397483517283}
   - component: {fileID: 5683611987261147311}
+  - component: {fileID: 681156228564599083}
   m_Layer: 0
   m_Name: Deduction Box
   m_TagString: Deduct
@@ -141,3 +142,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   FloatingTextPrefab: {fileID: 8792621796996801085, guid: 4aae9cb1d7c0d0d4d8b103cc34cd19c3, type: 3}
+--- !u!114 &681156228564599083
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5176222535500165183}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2f5a4448511b2e4ca8b2d15bdd31e72, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
