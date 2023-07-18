@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
-    public float moveSpeed;
+   /* public float moveSpeed;
     public Vector3 moveVector;
 
     public static GameManager instance = null;
@@ -74,4 +74,5 @@ public class GameManager : MonoBehaviour
     {
         Time.timeScale = 1f;
     }
+   */
 }

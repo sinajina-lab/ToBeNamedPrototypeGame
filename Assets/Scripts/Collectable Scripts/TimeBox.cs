@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class TimeBox : MonoBehaviour
 {
-    [SerializeField] float TimeValue = 1f;
+    public float TimeValue = 1f;
 
         private void OnTriggerEnter(Collider other)
     {

@@ -33,7 +33,7 @@ public class BallThrower : MonoBehaviour
     {
         setupBall();
 
-        timeManipulation.OnTimeChange += TimeChange;
+        timeManipulation.OnTimeChange += OnTimeDilationChange;
     }
     void TimeChange(object sender, TimeManipulation.OnTimeChangeArgs e)
     {
@@ -135,5 +135,9 @@ public class BallThrower : MonoBehaviour
             BallSpeed = MaxBallSpeed;
         }
         swipeTime = 0;
+    }
+    private void OnTimeDilationChange(object sender, TimeManipulation.OnTimeChangeArgs e)
+    {
+        timeDilation = e.newTimeDilation;
     }
 }

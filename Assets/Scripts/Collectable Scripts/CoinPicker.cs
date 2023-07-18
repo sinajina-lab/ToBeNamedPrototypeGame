@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -6,6 +7,8 @@ using TMPro;
 
 public class CoinPicker : MonoBehaviour
 {
+    //public static event Action OnPlayerDeath;
+
     private int coin = 0;
 
     [SerializeField] private TextMeshProUGUI foodText;
@@ -21,6 +24,18 @@ public class CoinPicker : MonoBehaviour
             Destroy(collision.gameObject);
             coin++;
             foodText.text = "" + coin;
+        }
+    }
+    private void BelowZeroPoints(int amount)
+    {
+        coin -= amount;
+
+        if(coin < 0)
+        {
+            coin = 0;
+            //const bool die = true;
+            //GameController.gameOver = die;
+            //OnPlayerDeath?.Invoke();
         }
     }
 }

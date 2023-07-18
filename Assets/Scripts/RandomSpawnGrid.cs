@@ -31,7 +31,7 @@ public class RandomSpawnGrid : MonoBehaviour
         while(!stop)
         {
             int spawnPointX = Random.Range(16, -2);
-            int spawnPointY = Random.Range(0, 5);
+            int spawnPointY = Random.Range(-1, 3);
             int spawnPointz = Random.Range(10, 20);
 
             Vector3 spawnPosition = new Vector3(spawnPointX, spawnPointY, spawnPointz);

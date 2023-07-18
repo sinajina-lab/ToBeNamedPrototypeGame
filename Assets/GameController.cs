@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -18,6 +19,18 @@ public class GameController : MonoBehaviour
     public void PlayGame()
     {
         SceneManager.LoadSceneAsync("Prototype");
+    }
+
+    //
+    private void OnEnable()
+    {
+        CheckNegativePoints.OnPlayerDeath += GameOver;
+    }
+
+    //
+    private void OnDisable()
+    {
+        CheckNegativePoints.OnPlayerDeath -= GameOver;
     }
 
     public void GameOver()

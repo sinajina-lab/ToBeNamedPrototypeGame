@@ -10,6 +10,7 @@ TagManager:
   - Deduct
   - Die
   - Destroy
+  - Enable
   layers:
   - Default
   - TransparentFX

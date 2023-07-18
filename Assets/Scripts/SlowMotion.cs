@@ -5,17 +5,26 @@ using System;
 
 public class SlowMotion : MonoBehaviour
 {
-    
+    public GameObject SlowMotionCube = null;
 
-    // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
-        
+        SlowMotionCube.SetActive(false);
+
+        //ShowCube();
+        StartCoroutine(WaitBeforeDisapear());
     }
 
-    // Update is called once per frame
-    void Update()
+    private void ShowCube()
     {
-        
+        SlowMotionCube.SetActive(true);
+
+        //wait for seconds
+    }
+
+    IEnumerator WaitBeforeDisapear()
+    {
+        SlowMotionCube.SetActive(false);
+        yield return new WaitForSeconds(5);
     }
 }
