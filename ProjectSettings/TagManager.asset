@@ -11,6 +11,7 @@ TagManager:
   - Die
   - Destroy
   - Enable
+  - Disable
   layers:
   - Default
   - TransparentFX

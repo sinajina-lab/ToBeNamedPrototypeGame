@@ -26,7 +26,7 @@ public class FallAndDie : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
-    void RespawnPoint()
+    public void RespawnPoint()
     {
         transform.position = spawnPoint.position;
     }

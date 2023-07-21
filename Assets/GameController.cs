@@ -11,6 +11,7 @@ public class GameController : MonoBehaviour
 
     public ThrowObject resetBall;
     public Vector3 startPosition;
+    public FallAndDie respawnBall;
 
     private void Awake()
     {
@@ -20,20 +21,26 @@ public class GameController : MonoBehaviour
     {
         SceneManager.LoadSceneAsync("Prototype");
     }
+    public static void PlayerDeath()
+    {
+        gameOver = true;
+    }
 
     //
     private void OnEnable()
     {
-        CheckNegativePoints.OnPlayerDeath += GameOver;
+        //CheckNegativePoints.OnPlayerDeath += GameOver;
+        DeductPoints.OnPlayerDeath += PlayerDeath;
     }
 
     //
     private void OnDisable()
     {
-        CheckNegativePoints.OnPlayerDeath -= GameOver;
+        //CheckNegativePoints.OnPlayerDeath -= GameOver;
+        DeductPoints.OnPlayerDeath -= PlayerDeath;
     }
 
-    public void GameOver()
+    public void PlayersDeath()
     {
         gameOverPanel.SetActive(true);
     }
@@ -85,5 +92,9 @@ public class GameController : MonoBehaviour
             gameOverPanel.SetActive(true);
         }
         
+    }
+    public void RespawnBall()
+    {
+        respawnBall.RespawnPoint();
     }
 }

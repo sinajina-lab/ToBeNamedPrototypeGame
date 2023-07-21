@@ -10,13 +10,13 @@ public class DeductPoints : MonoBehaviour
 
     private int currentPoints = 0;
     private int points = 0;
-    private int deduct = -5;
+    public int deduct = -5;
 
     [SerializeField] private TextMeshProUGUI foodText;
 
     //[SerializeField] private AudioSource AntSoundEffect;
 
-    private void OnCollisionEnter(Collision collision)
+    public void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.CompareTag("Deduct"))
         {
@@ -24,21 +24,29 @@ public class DeductPoints : MonoBehaviour
 
             Destroy(collision.gameObject);
             deduct--;
-            foodText.text = "" + deduct;
+            //foodText.text = "" + deduct;
+            UpdateScore();
         }
     }
     private void Start()
     {
         currentPoints = points;
+        UpdateScore();
     }
-    private void Update()
+
+    public void UpdateScore()
     {
-        if (currentPoints >= -1  )
+        currentPoints = deduct;
+        foodText.text = currentPoints.ToString();
+
+        if (currentPoints <= 0)
         {
-            currentPoints = 0;
-            //const bool die = true;
-            //GameController.gameOver = die;
-            OnPlayerDeath?.Invoke();
+            GameController.PlayerDeath();
         }
+    }
+    public void MinusPoints()
+    {
+        deduct--;
+        UpdateScore();
     }
 }

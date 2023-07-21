@@ -7,24 +7,36 @@ public class SlowMotion : MonoBehaviour
 {
     public GameObject SlowMotionCube = null;
 
+    // Duration for which the SlowMotionCube stays active
+    public float activeDuration = 5f;
+
     private void Start()
     {
         SlowMotionCube.SetActive(false);
-
-        //ShowCube();
-        StartCoroutine(WaitBeforeDisapear());
     }
 
-    private void ShowCube()
+    private void ShowSlowMotionCube()
+    {
+        SlowMotionCube.SetActive(true);
+        StartCoroutine(DeactivateAfterDuration());
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.tag == "Enable")
+        {
+            ShowSlowMotionCube();
+        }
+    }
+
+    IEnumerator DeactivateAfterDuration()
     {
         SlowMotionCube.SetActive(true);
 
-        //wait for seconds
-    }
+        // Wait for the specified duration
+        yield return new WaitForSeconds(activeDuration);
 
-    IEnumerator WaitBeforeDisapear()
-    {
+        // Deactivate the SlowMotionCube
         SlowMotionCube.SetActive(false);
-        yield return new WaitForSeconds(5);
     }
 }

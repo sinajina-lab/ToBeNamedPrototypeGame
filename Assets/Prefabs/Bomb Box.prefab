@@ -149,7 +149,9 @@ MonoBehaviour:
   _triggerForce: 0.5
   _explosionRadius: 5
   _explosionForce: 500
-  _particales: {fileID: 9183404142034478127, guid: fbc6c97b8fbeec448885bca50a2c2117, type: 3}
+  _particles: {fileID: 9183404142034478127, guid: fbc6c97b8fbeec448885bca50a2c2117, type: 3}
+  deductPointsScript: {fileID: 0}
+  coinPickerScript: {fileID: 0}
 --- !u!114 &2640315639057339143
 MonoBehaviour:
   m_ObjectHideFlags: 0

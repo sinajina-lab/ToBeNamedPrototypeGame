@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 4043918473172797090}
   m_Layer: 7
   m_Name: Slow Motion Box
-  m_TagString: Slow Motion Box
+  m_TagString: Enable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

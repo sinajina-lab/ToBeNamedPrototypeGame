@@ -8,11 +8,11 @@ public class DetectCollision : MonoBehaviour
     {
         if (collision.gameObject.tag == "Enable")
         {
-            ShowSlowMotionBox.isHide = true;
+            ShowSlowMotionBox.isHide = false;
         }
         else if(collision.gameObject.tag == "Disable")
         {
-            ShowSlowMotionBox.isHide = false;
+            ShowSlowMotionBox.isHide = true;
         }
     }
 

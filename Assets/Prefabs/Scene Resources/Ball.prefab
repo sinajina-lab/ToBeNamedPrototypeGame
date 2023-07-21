@@ -15,9 +15,9 @@ GameObject:
   - component: {fileID: 8602174919014843636}
   - component: {fileID: 8602174919014843639}
   - component: {fileID: 8602174919014843638}
-  - component: {fileID: 8602174919014843641}
   - component: {fileID: 8602174919014843646}
   - component: {fileID: 8602174919014843647}
+  - component: {fileID: 3768653028957107685}
   m_Layer: 0
   m_Name: Ball
   m_TagString: Player
@@ -147,19 +147,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11441a9f8121abc43819db233e3d6e79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &8602174919014843641
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8602174919014843633}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f32d766fd6080e345a92b761a27a87a9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  foodText: {fileID: 0}
 --- !u!114 &8602174919014843646
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -172,6 +159,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce6e015c9487f544d9899627cad68e04, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  deduct: -5
   foodText: {fileID: 0}
 --- !u!114 &8602174919014843647
 MonoBehaviour:
@@ -185,6 +173,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ec706a43bde56647a2d4de004edb864, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &3768653028957107685
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8602174919014843633}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1175b20639feaad429e0030619df7504, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SlowMotionCube: {fileID: 2415386520224785920, guid: 847e6973822a57c42ab80bbaa669e54a, type: 3}
+  activeDuration: 5
 --- !u!1 &8602174919108232095
 GameObject:
   m_ObjectHideFlags: 0

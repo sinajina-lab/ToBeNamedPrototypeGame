@@ -24,18 +24,23 @@ public class CoinPicker : MonoBehaviour
             Destroy(collision.gameObject);
             coin++;
             foodText.text = "" + coin;
+            UpdateScore();
         }
     }
-    private void BelowZeroPoints(int amount)
+    private void Start()
     {
-        coin -= amount;
+        UpdateScore();
+    }
 
-        if(coin < 0)
-        {
-            coin = 0;
-            //const bool die = true;
-            //GameController.gameOver = die;
-            //OnPlayerDeath?.Invoke();
-        }
+    private void UpdateScore()
+    {
+        foodText.text = coin.ToString();
+    }
+
+    // Add points when called externally (from Explosive script)
+    public void AddPoints()
+    {
+        coin++;
+        UpdateScore();
     }
 }
