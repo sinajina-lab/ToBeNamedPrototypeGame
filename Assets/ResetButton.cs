@@ -7,24 +7,32 @@ using UnityEngine.UI;
 
 public class ResetButton : MonoBehaviour
 {
-    public Transform ballTransform;
+    public GameObject ballPrefab;
     private Vector3 initialPosition;
 
     void Start()
     {
         // Store the initial position of the ball when the game starts
-        initialPosition = ballTransform.position;
+        initialPosition = GameObject.FindGameObjectWithTag("Player").transform.position;
 
         // Get the Button component from the GameObject
         Button button = GetComponent<Button>();
 
-        // Add an onClick listener to the button and assign the ResetBall method
+        // Assign the ResetBall method to the onClick event of the button
         button.onClick.AddListener(ResetBall);
     }
 
-    // Method to reset the ball position
-    public void ResetBall()
+    // Method to respawn the ball at its initial position
+    private void ResetBall()
     {
-        ballTransform.position = initialPosition;
+        // Destroy the existing ball (if any)
+        GameObject existingBall = GameObject.FindGameObjectWithTag("Player");
+        if (existingBall != null)
+        {
+            Destroy(existingBall);
+        }
+
+        // Instantiate a new ball at the initial position
+        Instantiate(ballPrefab, initialPosition, Quaternion.identity);
     }
 }

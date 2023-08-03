@@ -41,13 +41,18 @@ public class Explosive : MonoBehaviour
                 coinPickerScript.AddPoints();
             }
 
-            // Check if the object has the DeductPoints script attached
-            var deductPointsScript = obj.GetComponent<DeductPoints>();
-            if (deductPointsScript != null)
+            else
             {
-                // Deduct points from the object's script (DeductPoints)
-                deductPointsScript.MinusPoints();
+                // Check if the object has the DeductPoints script attached
+                var deductPointsScript = obj.GetComponent<DeductPoints>();
+                if (deductPointsScript != null)
+                {
+                    // Deduct points from the object's script (DeductPoints)
+                    deductPointsScript.MinusPoints();
+                }
+
             }
+            
         }
 
         Instantiate(_particles, transform.position, Quaternion.identity);

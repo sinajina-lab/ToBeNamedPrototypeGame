@@ -70,7 +70,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 08f7df3bb7e15134cab546e1193541f9, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -142,7 +142,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8602174919014843633}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 11441a9f8121abc43819db233e3d6e79, type: 3}
   m_Name: 
@@ -185,7 +185,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1175b20639feaad429e0030619df7504, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SlowMotionCube: {fileID: 2415386520224785920, guid: 847e6973822a57c42ab80bbaa669e54a, type: 3}
+  SlowMotionCube: {fileID: 0}
   activeDuration: 5
 --- !u!1 &8602174919108232095
 GameObject:

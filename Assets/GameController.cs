@@ -9,14 +9,6 @@ public class GameController : MonoBehaviour
     public static bool gameOver;
     public GameObject gameOverPanel;
 
-    public ThrowObject resetBall;
-    public Vector3 startPosition;
-    public FallAndDie respawnBall;
-
-    private void Awake()
-    {
-        startPosition = transform.position;
-    }
     public void PlayGame()
     {
         SceneManager.LoadSceneAsync("Prototype");
@@ -44,12 +36,7 @@ public class GameController : MonoBehaviour
     {
         gameOverPanel.SetActive(true);
     }
-    public void ResetBallButton()
-    {
-        transform.position = startPosition;
-        //resetBall.ResetBall();
-        //FindObjectOfType<BallThrower>().ResetBall();
-    }
+
     public void Restart()
     {
         Time.timeScale = 1f;
@@ -92,9 +79,5 @@ public class GameController : MonoBehaviour
             gameOverPanel.SetActive(true);
         }
         
-    }
-    public void RespawnBall()
-    {
-        respawnBall.RespawnPoint();
     }
 }

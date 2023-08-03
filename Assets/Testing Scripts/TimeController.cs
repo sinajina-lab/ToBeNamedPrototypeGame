@@ -1,12 +1,11 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
-public class TimeManipulation : MonoBehaviour
+public class TimeController : MonoBehaviour
 {
     float timeDilation = 1f;
-
     public event EventHandler<OnTimeChangeArgs> OnTimeChange;
 
     public class OnTimeChangeArgs : EventArgs
@@ -14,17 +13,21 @@ public class TimeManipulation : MonoBehaviour
         public float newTimeDilation;
     }
 
-    public void TimeChange(float newTimeDilation)
+    // Start is called before the first frame update
+    void Start()
     {
-        timeDilation = newTimeDilation;
-
-        // Null check before invoking the event
-        OnTimeChange?.Invoke(this, new OnTimeChangeArgs { newTimeDilation = timeDilation });
+        
     }
 
     // Update is called once per frame
     void Update()
     {
+        
+    }
+    void TimeChange(float newTimeDilation)
+    {
+        timeDilation = newTimeDilation;
 
+        OnTimeChange.Invoke(this, new OnTimeChangeArgs { newTimeDilation = timeDilation});
     }
 }
