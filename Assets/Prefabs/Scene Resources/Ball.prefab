@@ -14,7 +14,6 @@ GameObject:
   - component: {fileID: 8602174919014843637}
   - component: {fileID: 8602174919014843636}
   - component: {fileID: 8602174919014843639}
-  - component: {fileID: 8602174919014843638}
   - component: {fileID: 8602174919014843646}
   - component: {fileID: 8602174919014843647}
   - component: {fileID: 3768653028957107685}
@@ -33,7 +32,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8602174919014843633}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.098, y: -1.5, z: 3}
+  m_LocalPosition: {x: 0, y: -1.5, z: 3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -135,18 +134,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MinSwipDist: 13
   MaxBallSpeed: 350
---- !u!114 &8602174919014843638
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8602174919014843633}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 11441a9f8121abc43819db233e3d6e79, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &8602174919014843646
 MonoBehaviour:
   m_ObjectHideFlags: 0

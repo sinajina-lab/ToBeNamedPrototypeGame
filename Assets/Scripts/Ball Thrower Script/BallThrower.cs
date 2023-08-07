@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class BallThrower : MonoBehaviour
 {
-    TimeManipulation timeManipulation;
     float timeDilation = 1f;
 
     private GameObject Ball;
@@ -23,21 +22,10 @@ public class BallThrower : MonoBehaviour
     private Vector3 newPosition;
     Rigidbody rb;
 
-    private void Awake()
-    {
-        timeManipulation = GetComponent<TimeManipulation>();
-    }
-
     // Start is called before the first frame update
     void Start()
     {
         setupBall();
-
-        timeManipulation.OnTimeChange += OnTimeDilationChange;
-    }
-    void TimeChange(object sender, TimeManipulation.OnTimeChangeArgs e)
-    {
-        timeDilation = e.newTimeDilation;
     }
 
     void setupBall()
@@ -135,9 +123,5 @@ public class BallThrower : MonoBehaviour
             BallSpeed = MaxBallSpeed;
         }
         swipeTime = 0;
-    }
-    private void OnTimeDilationChange(object sender, TimeManipulation.OnTimeChangeArgs e)
-    {
-        timeDilation = e.newTimeDilation;
     }
 }

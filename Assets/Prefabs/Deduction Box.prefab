@@ -17,7 +17,6 @@ GameObject:
   - component: {fileID: 5746796397483517283}
   - component: {fileID: 5683611987261147311}
   - component: {fileID: 681156228564599083}
-  - component: {fileID: 6712034584696304528}
   m_Layer: 0
   m_Name: Deduction Box
   m_TagString: Deduct
@@ -170,17 +169,5 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e2f5a4448511b2e4ca8b2d15bdd31e72, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &6712034584696304528
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5176222535500165183}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aab154570ce869d4a928fd1adf46e8b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

@@ -12,12 +12,11 @@ GameObject:
   - component: {fileID: 3478266788831861034}
   - component: {fileID: 1702851586059693536}
   - component: {fileID: 6943357576150573153}
-  - component: {fileID: 9130467737229920282}
   - component: {fileID: 4272210061046746171}
+  - component: {fileID: 9130467737229920282}
   - component: {fileID: 5880419891332692617}
   - component: {fileID: 515024330078331333}
   - component: {fileID: 4273448797498656001}
-  - component: {fileID: 8190559917646685023}
   m_Layer: 0
   m_Name: Collect Box
   m_TagString: Coins
@@ -103,22 +102,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.02, y: 0.019999996, z: 0.019999996}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &9130467737229920282
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 910081231409105973}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 674947f8bf4bf7847b1bdf7e313d268a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _replacement: {fileID: 9183404142034478127, guid: fbc6c97b8fbeec448885bca50a2c2117, type: 3}
-  _breakForce: 2
-  _collisionMultiplier: 100
-  _broken: 0
 --- !u!54 &4272210061046746171
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -135,6 +118,22 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &9130467737229920282
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 910081231409105973}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 674947f8bf4bf7847b1bdf7e313d268a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _replacement: {fileID: 9183404142034478127, guid: fbc6c97b8fbeec448885bca50a2c2117, type: 3}
+  _breakForce: 2
+  _collisionMultiplier: 100
+  _broken: 0
 --- !u!114 &5880419891332692617
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -170,17 +169,5 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e2f5a4448511b2e4ca8b2d15bdd31e72, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &8190559917646685023
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 910081231409105973}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aab154570ce869d4a928fd1adf46e8b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

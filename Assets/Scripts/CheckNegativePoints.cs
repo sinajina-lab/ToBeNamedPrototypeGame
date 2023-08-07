@@ -7,7 +7,7 @@ using TMPro;
 
 public class CheckNegativePoints : MonoBehaviour
 {
-    public static event Action OnPlayerDeath;
+    //public static event Action OnPlayerDeath;
 
     private int currentPoints = 0;
     private int points = 0;
