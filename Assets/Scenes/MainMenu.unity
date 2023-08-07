@@ -382,9 +382,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameOverPanel: {fileID: 0}
-  resetBall: {fileID: 0}
-  startPosition: {x: 0, y: 0, z: 0}
-  respawnBall: {fileID: 0}
 --- !u!4 &418961060
 Transform:
   m_ObjectHideFlags: 0
@@ -503,8 +500,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -597}
-  m_SizeDelta: {x: 1092.303, y: 254.654}
+  m_AnchoredPosition: {x: 4, y: -625.44}
+  m_SizeDelta: {x: 848.323, y: 197.773}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &531314324
 MonoBehaviour:
@@ -826,7 +823,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: aaed60164b2bf874f9d675b0c958a825, type: 3}
+  m_Sprite: {fileID: 21300000, guid: fc3341b3f1dac464baa311991f5499e0, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1174,7 +1171,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 5ceb0210b5d53bd47b0d422414f1c3d4, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 1c8431185995a43f4a7544bcb872b5db, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
