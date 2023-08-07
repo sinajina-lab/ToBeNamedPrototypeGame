@@ -9,6 +9,8 @@ public class CoinPicker : MonoBehaviour
 {
     //public static event Action OnPlayerDeath;
 
+    private GameController gameController;
+
     private int coin = 0;
 
     [SerializeField] private TextMeshProUGUI foodText;
@@ -25,10 +27,17 @@ public class CoinPicker : MonoBehaviour
             coin++;
             foodText.text = "" + coin;
             UpdateScore();
+
+            /*if (coin > GameController.maxPoints) // Check if the current score is higher than the max score
+            {
+                GameController.maxPoints = coin; // Update the max score if needed
+            }*/
         }
     }
     private void Start()
     {
+        gameController = FindObjectOfType<GameController>();
+
         UpdateScore();
     }
 
@@ -41,6 +50,12 @@ public class CoinPicker : MonoBehaviour
     public void AddPoints()
     {
         coin++;
+
+        /*if (coin > maxPoints) // Check if the current score is higher than the max score
+        {
+            maxPoints = coin; // Update the max score if needed
+        }*/
+
         UpdateScore();
     }
 }

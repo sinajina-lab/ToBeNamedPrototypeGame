@@ -34,29 +34,25 @@ public class Explosive : MonoBehaviour
             rb.AddExplosionForce(_explosionForce, transform.position, _explosionRadius);
 
             // Check if the object has the CoinPicker script attached
-            var coinPickerScript = obj.GetComponent<CoinPicker>();
-            if (coinPickerScript != null)
+            var coinPickerObj = obj.GetComponent<CoinPicker>();
+            if (coinPickerObj != null)
             {
                 // Add points to the object's script (CoinPicker)
-                coinPickerScript.AddPoints();
+                coinPickerObj.AddPoints();
             }
-
             else
             {
                 // Check if the object has the DeductPoints script attached
-                var deductPointsScript = obj.GetComponent<DeductPoints>();
-                if (deductPointsScript != null)
+                var deductPointsObj = obj.GetComponent<DeductPoints>();
+                if (deductPointsObj != null)
                 {
                     // Deduct points from the object's script (DeductPoints)
-                    deductPointsScript.MinusPoints();
+                    deductPointsObj.MinusPoints();
                 }
-
             }
-            
         }
 
         Instantiate(_particles, transform.position, Quaternion.identity);
-
         Destroy(gameObject);
     }
 }
