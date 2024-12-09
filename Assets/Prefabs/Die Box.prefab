@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 3152160348374689044}
   - component: {fileID: 6229198171707049577}
   - component: {fileID: 2157046360462692093}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Die Box
   m_TagString: Die
   m_Icon: {fileID: 0}

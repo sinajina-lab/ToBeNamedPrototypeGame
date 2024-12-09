@@ -500,8 +500,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 4, y: -625.44}
-  m_SizeDelta: {x: 848.323, y: 197.773}
+  m_AnchoredPosition: {x: 4, y: -453}
+  m_SizeDelta: {x: 649.9, y: 151.513}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &531314324
 MonoBehaviour:
@@ -525,7 +525,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 90271d0b327d3144b8e77044f13588b9, type: 3}
-    m_FontSize: 125
+    m_FontSize: 100
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 1
@@ -744,8 +744,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -195.052, y: 0}
-  m_SizeDelta: {x: 221.897, y: 221.897}
+  m_AnchoredPosition: {x: -139.351, y: 0}
+  m_SizeDelta: {x: 168.873, y: 168.873}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1333438450
 MonoBehaviour:
@@ -915,7 +915,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
@@ -945,7 +945,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -1
   m_TargetDisplay: 0
 --- !u!224 &1390165306
 RectTransform:
@@ -1000,6 +1000,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f3e3bbcdbcf53654986b1c120c551d1c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  currentGamePhase: 0
 --- !u!4 &1589279935
 Transform:
   m_ObjectHideFlags: 0
@@ -1054,8 +1055,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 218, y: 0}
-  m_SizeDelta: {x: 221.897, y: 221.897}
+  m_AnchoredPosition: {x: 175, y: 0}
+  m_SizeDelta: {x: 168.873, y: 168.873}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1658501732
 MonoBehaviour:
@@ -1082,6 +1083,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f3e3bbcdbcf53654986b1c120c551d1c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  currentGamePhase: 0
 --- !u!114 &1658501734
 MonoBehaviour:
   m_ObjectHideFlags: 0

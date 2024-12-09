@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class BallThrower : MonoBehaviour
 {
-    float timeDilation = 1f;
-
     private GameObject Ball;
 
     float startTime, endTime, swipeDistance, swipeTime;
@@ -55,7 +53,7 @@ public class BallThrower : MonoBehaviour
     void PickupBall()
     {
         Vector3 mousePos = Input.mousePosition;
-        mousePos.z = Camera.main.nearClipPlane * 5f;
+        mousePos.z = Camera.main.nearClipPlane * 15f; //How close the ball gets to the screen
         newPosition = Camera.main.ScreenToWorldPoint(mousePos);
         Ball.transform.localPosition = Vector3.Lerp(Ball.transform.localPosition, newPosition, 80f * Time.deltaTime);
     }

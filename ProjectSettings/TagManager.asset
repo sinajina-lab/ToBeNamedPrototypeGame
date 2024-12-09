@@ -13,6 +13,7 @@ TagManager:
   - Enable
   - Disable
   - death
+  - Target Score
   layers:
   - Default
   - TransparentFX

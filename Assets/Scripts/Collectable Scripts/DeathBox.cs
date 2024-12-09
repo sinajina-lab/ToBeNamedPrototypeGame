@@ -9,6 +9,7 @@ public class DeathBox : MonoBehaviour
         if(collision.transform.tag == "Die")
         {
             GameController.gameOver = true;
+            //ResetTimer();
         }
     }
 }
